@@ -18,7 +18,7 @@ class CreateUserRoom extends Migration
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('room_id');
             $table->timestamps();
-		    $table->foreign('user_id')
+		    /*$table->foreign('user_id')
 			    ->references('user_id')
 			    ->on('chat_users')
 			    ->onDelete('cascade');
@@ -26,6 +26,7 @@ class CreateUserRoom extends Migration
 			    ->references('id')
 			    ->on('chat_rooms')
 			    ->onDelete('cascade');
+			    */
         });
     }
 

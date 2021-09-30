@@ -16,11 +16,11 @@ class CreateChatUser extends Migration
         Schema::create('chat_users', function (Blueprint $table) {
 		$table->unsignedInteger('user_id');
         $table->timestamps();
-		$table->foreign('user_id')
+		/*$table->foreign('user_id')
 			->references('id')
 			->on('users')
 			->onDelete('cascade');
-			
+		*/	
 	    });
     }
 

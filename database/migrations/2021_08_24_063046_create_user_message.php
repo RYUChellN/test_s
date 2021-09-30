@@ -20,14 +20,15 @@ class CreateUserMessage extends Migration
             $table->text('chat_text');
             $table->dateTime('send_at');
             $table->timestamps();
-		    $table->foreign('user_id')
+		    /*$table->foreign('user_id')
 			    ->references('user_id')
 		    	->on('chat_users')
 			    ->onDelete('cascade');
 		    $table->foreign('room_id')
 			    ->references('id')
 			    ->on('chat_rooms')
-			    ->onDelete('cascade');	
+			    ->onDelete('cascade');
+			    */
 	    });
     }
 
